@@ -10,15 +10,15 @@ module.exports = env => merge(base, {
     contentBase: './build',
     stats: 'errors-warnings',
   },
-  externals: {
-    config:
-    JSON.stringify(
-      merge(
-        require('../app/config/base.json'),
-        require('../app/config/dev.json'),
-      ),
-    ),
-  },
+  // externals: {
+  //   config:
+  //   JSON.stringify(
+  //     merge(
+  //       require('../app/config/base.json'),
+  //       require('../app/config/dev.json'),
+  //     ),
+  //   ),
+  // },
   module: {
     rules: [
       {

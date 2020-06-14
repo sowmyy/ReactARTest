@@ -7,15 +7,15 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = env => merge(common, {
   mode: 'production',
-  externals: {
-    config:
-    JSON.stringify(
-      merge(
-        require('../app/config/base.json'),
-        env.deploy === 'prod' ? require('../app/config/prod.json') : require('../app/config/dev.json'),
-      ),
-    ),
-  },
+  // externals: {
+  //   config:
+  //   JSON.stringify(
+  //     merge(
+  //       require('../app/config/base.json'),
+  //       env.deploy === 'prod' ? require('../app/config/prod.json') : require('../app/config/dev.json'),
+  //     ),
+  //   ),
+  // },
   module: {
     rules: [
       {
