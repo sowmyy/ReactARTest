@@ -1,0 +1,7 @@
+{
+  "api": {
+    "host": "https://o365engage.fresco.me",
+    "baseUrl": "https://o365engage-api.fresco.me",
+    "rootUrl": "https://o365engage.fresco.me"
+  }
+}
